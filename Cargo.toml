@@ -19,6 +19,7 @@ keywords = ["Starry"]
 default = []
 
 smp = ["axfeat/smp"]
+irq = ["axfeat/irq"]
 alloc = ["dep:axalloc", "axfeat/alloc"]
 multitask = ["axtask/multitask", "axfeat/multitask", "axsync/multitask"]
 fd = ["alloc"]
@@ -46,8 +47,8 @@ axio = { git = "https://github.com/Starry-OS/axio.git" }
 axerrno = { git = "https://github.com/Starry-OS/axerrno.git" }
 static_assertions = "1.1.0"
 spin = { version = "0.9" }
-lazy_static = { version = "1.4", features = ["spin_no_std"] }
+lazy_static = { version = "1.5", features = ["spin_no_std"] }
 flatten_objects = { git = "https://github.com/Starry-OS/flatten_objects.git" }
 
 [build-dependencies]
-bindgen ={ version = "0.66" }
+bindgen ={ version = "0.69" }
